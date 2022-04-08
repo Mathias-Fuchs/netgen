@@ -1,0 +1,12 @@
+PROJECT_NAME   = "netgenmeshing"
+OUTPUT_DIRECTORY   = ./doxydoc/
+EXTRACT_ALL= YES
+INPUT  = ./core ./general ./geom2d ./gprim ./include ./linalg ./meshing
+RECURSIVE  = YES
+HIDE_UNDOC_RELATIONS   = NO
+HAVE_DOT   = YES
+UML_LOOK   = YES
+CALL_GRAPH = YES
+CALLER_GRAPH   = YES
+
+
