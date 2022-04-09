@@ -5,3 +5,4 @@
 *.stackdump
 /vc/.vs/netgen/v17
 *.swp
+/vc/x64/Debug

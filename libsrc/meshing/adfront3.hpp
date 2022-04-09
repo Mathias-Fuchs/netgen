@@ -1,6 +1,9 @@
 #ifndef FILE_ADFRONT3
 #define FILE_ADFRONT3
 
+#include "../gprim/geomobjects.hpp"
+using Point = netgen::Point;
+
 /**************************************************************************/
 /* File:   adfront3.hh                                                    */
 /* Author: Joachim Schoeberl                                              */
