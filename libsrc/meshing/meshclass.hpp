@@ -556,11 +556,13 @@ namespace netgen
     ///
 	DLL_HEADER void Merge (istream & infile, const int surfindex_offset = 0);
     ///
-	DLL_HEADER void Save (const filesystem::path & filename) const;
+/*
+DLL_HEADER void Save(const filesystem::path& filename) const;
     ///
 	DLL_HEADER void Load (const filesystem::path & filename);
     ///
-	DLL_HEADER void Merge (const filesystem::path & filename, const int surfindex_offset = 0);
+    */
+    DLL_HEADER void Merge (const filesystem::path & filename, const int surfindex_offset = 0);
 
 
     DLL_HEADER void DoArchive (Archive & archive);

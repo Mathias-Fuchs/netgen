@@ -45,14 +45,14 @@
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(HOME)\source\repos\netgen\libsrc;$(HOME)\source\repos\netgen\libsrc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;__AVX__;NOMINMAX;NGINTERFACE_EXPORTS;NGLIB_EXPORTS;nglib_EXPORT;</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(HOME)\source\repos\netgen\libsrc;$(HOME)\source\repos\netgen\libsrc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;__AVX__;NOMINMAX;NGINTERFACE_EXPORTS;NGLIB_EXPORTS;nglib_EXPORT;</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -83,7 +83,6 @@
     <ClCompile Include="..\libsrc\csg\manifold.cpp" />
     <ClCompile Include="..\libsrc\csg\meshsurf.cpp" />
     <ClCompile Include="..\libsrc\csg\polyhedra.cpp" />
-    <ClCompile Include="..\libsrc\csg\python_csg.cpp" />
     <ClCompile Include="..\libsrc\csg\revolution.cpp" />
     <ClCompile Include="..\libsrc\csg\singularref.cpp" />
     <ClCompile Include="..\libsrc\csg\solid.cpp" />
@@ -94,7 +93,6 @@
     <ClCompile Include="..\libsrc\csg\triapprox.cpp" />
     <ClCompile Include="..\libsrc\csg\zrefine.cpp" />
     <ClCompile Include="..\libsrc\general\dynamicmem.cpp" />
-    <ClCompile Include="..\libsrc\general\gzstream.cpp" />
     <ClCompile Include="..\libsrc\general\hashtabl.cpp" />
     <ClCompile Include="..\libsrc\general\mpi_interface.cpp" />
     <ClCompile Include="..\libsrc\general\mystring.cpp" />
@@ -155,7 +153,6 @@
     <ClCompile Include="..\libsrc\meshing\paralleltop.cpp" />
     <ClCompile Include="..\libsrc\meshing\parser2.cpp" />
     <ClCompile Include="..\libsrc\meshing\parser3.cpp" />
-    <ClCompile Include="..\libsrc\meshing\python_mesh.cpp" />
     <ClCompile Include="..\libsrc\meshing\refine.cpp" />
     <ClCompile Include="..\libsrc\meshing\ruler2.cpp" />
     <ClCompile Include="..\libsrc\meshing\ruler3.cpp" />
@@ -168,7 +165,6 @@
     <ClCompile Include="..\libsrc\meshing\topology.cpp" />
     <ClCompile Include="..\libsrc\meshing\validate.cpp" />
     <ClCompile Include="..\libsrc\stlgeom\meshstlsurface.cpp" />
-    <ClCompile Include="..\libsrc\stlgeom\python_stl.cpp" />
     <ClCompile Include="..\libsrc\stlgeom\stlgeom.cpp" />
     <ClCompile Include="..\libsrc\stlgeom\stlgeomchart.cpp" />
     <ClCompile Include="..\libsrc\stlgeom\stlgeommesh.cpp" />

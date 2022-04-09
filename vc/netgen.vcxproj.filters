@@ -74,9 +74,6 @@
     <ClCompile Include="..\libsrc\general\dynamicmem.cpp">
       <Filter>Source Files\general</Filter>
     </ClCompile>
-    <ClCompile Include="..\libsrc\general\gzstream.cpp">
-      <Filter>Source Files\general</Filter>
-    </ClCompile>
     <ClCompile Include="..\libsrc\general\hashtabl.cpp">
       <Filter>Source Files\general</Filter>
     </ClCompile>
@@ -155,9 +152,6 @@
     <ClCompile Include="..\libsrc\csg\polyhedra.cpp">
       <Filter>Source Files\csg</Filter>
     </ClCompile>
-    <ClCompile Include="..\libsrc\csg\python_csg.cpp">
-      <Filter>Source Files\csg</Filter>
-    </ClCompile>
     <ClCompile Include="..\libsrc\csg\revolution.cpp">
       <Filter>Source Files\csg</Filter>
     </ClCompile>
@@ -186,9 +180,6 @@
       <Filter>Source Files\csg</Filter>
     </ClCompile>
     <ClCompile Include="..\libsrc\stlgeom\meshstlsurface.cpp">
-      <Filter>Source Files\stlgeom</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libsrc\stlgeom\python_stl.cpp">
       <Filter>Source Files\stlgeom</Filter>
     </ClCompile>
     <ClCompile Include="..\libsrc\stlgeom\stlgeom.cpp">
@@ -303,9 +294,6 @@
       <Filter>Source Files\meshing</Filter>
     </ClCompile>
     <ClCompile Include="..\libsrc\meshing\parser3.cpp">
-      <Filter>Source Files\meshing</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libsrc\meshing\python_mesh.cpp">
       <Filter>Source Files\meshing</Filter>
     </ClCompile>
     <ClCompile Include="..\libsrc\meshing\refine.cpp">

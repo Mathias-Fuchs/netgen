@@ -2,7 +2,7 @@
 #include <atomic>
 #include <set>
 #include "meshing.hpp"
-#include "../general/gzstream.h"
+// #include "../general/gzstream.h"
 
 #ifdef NG_PYTHON
 // must be included to instantiate Archive::Shallow(NetgenGeometry&)
@@ -628,7 +628,7 @@ namespace netgen
 
 
 
-
+/*
 
   void Mesh :: Save (const filesystem::path & filename) const
   {
@@ -653,7 +653,7 @@ namespace netgen
     Save(*outfile);
     delete outfile;
   }
-
+*/
 
 
   void Mesh :: Save (ostream & outfile) const
@@ -1114,7 +1114,7 @@ namespace netgen
   }
 
 
-
+  /*
   void Mesh :: Load (const filesystem::path & filename)
   {
     PrintMessage (1, "filename = ", filename);
@@ -1142,7 +1142,7 @@ namespace netgen
     Load(*infile);
     delete infile;
   }
-
+  */
 
 
   // Reads mandatory integer and optional string token from input stream
