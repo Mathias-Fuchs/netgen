@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8120DF59-DA7E-4455-9104-4F312EE22829}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\libsrc\core\archive.cpp" />
+    <ClCompile Include="..\libsrc\core\bitarray.cpp" />
+    <ClCompile Include="..\libsrc\core\exception.cpp" />
+    <ClCompile Include="..\libsrc\core\flags.cpp" />
+    <ClCompile Include="..\libsrc\core\localheap.cpp" />
+    <ClCompile Include="..\libsrc\core\logging.cpp" />
+    <ClCompile Include="..\libsrc\core\paje_trace.cpp" />
+    <ClCompile Include="..\libsrc\core\profiler.cpp" />
+    <ClCompile Include="..\libsrc\core\table.cpp" />
+    <ClCompile Include="..\libsrc\core\taskmanager.cpp" />
+    <ClCompile Include="..\libsrc\core\utils.cpp" />
+    <ClCompile Include="..\libsrc\core\version.cpp" />
+    <ClCompile Include="..\libsrc\csg\algprim.cpp" />
+    <ClCompile Include="..\libsrc\csg\brick.cpp" />
+    <ClCompile Include="..\libsrc\csg\bspline2d.cpp" />
+    <ClCompile Include="..\libsrc\csg\csgeom.cpp" />
+    <ClCompile Include="..\libsrc\csg\csgparser.cpp" />
+    <ClCompile Include="..\libsrc\csg\curve2d.cpp" />
+    <ClCompile Include="..\libsrc\csg\edgeflw.cpp" />
+    <ClCompile Include="..\libsrc\csg\explicitcurve2d.cpp" />
+    <ClCompile Include="..\libsrc\csg\extrusion.cpp" />
+    <ClCompile Include="..\libsrc\csg\gencyl.cpp" />
+    <ClCompile Include="..\libsrc\csg\genmesh.cpp" />
+    <ClCompile Include="..\libsrc\csg\identify.cpp" />
+    <ClCompile Include="..\libsrc\csg\manifold.cpp" />
+    <ClCompile Include="..\libsrc\csg\meshsurf.cpp" />
+    <ClCompile Include="..\libsrc\csg\polyhedra.cpp" />
+    <ClCompile Include="..\libsrc\csg\python_csg.cpp" />
+    <ClCompile Include="..\libsrc\csg\revolution.cpp" />
+    <ClCompile Include="..\libsrc\csg\singularref.cpp" />
+    <ClCompile Include="..\libsrc\csg\solid.cpp" />
+    <ClCompile Include="..\libsrc\csg\specpoin.cpp" />
+    <ClCompile Include="..\libsrc\csg\spline3d.cpp" />
+    <ClCompile Include="..\libsrc\csg\splinesurface.cpp" />
+    <ClCompile Include="..\libsrc\csg\surface.cpp" />
+    <ClCompile Include="..\libsrc\csg\triapprox.cpp" />
+    <ClCompile Include="..\libsrc\csg\zrefine.cpp" />
+    <ClCompile Include="..\libsrc\general\dynamicmem.cpp" />
+    <ClCompile Include="..\libsrc\general\gzstream.cpp" />
+    <ClCompile Include="..\libsrc\general\hashtabl.cpp" />
+    <ClCompile Include="..\libsrc\general\mpi_interface.cpp" />
+    <ClCompile Include="..\libsrc\general\mystring.cpp" />
+    <ClCompile Include="..\libsrc\general\ngarray.cpp" />
+    <ClCompile Include="..\libsrc\general\ngbitarray.cpp" />
+    <ClCompile Include="..\libsrc\general\optmem.cpp" />
+    <ClCompile Include="..\libsrc\general\parthreads.cpp" />
+    <ClCompile Include="..\libsrc\general\seti.cpp" />
+    <ClCompile Include="..\libsrc\general\sort.cpp" />
+    <ClCompile Include="..\libsrc\general\spbita2d.cpp" />
+    <ClCompile Include="..\libsrc\general\table.cpp" />
+    <ClCompile Include="..\libsrc\geom2d\csg2d.cpp" />
+    <ClCompile Include="..\libsrc\geom2d\genmesh2d.cpp" />
+    <ClCompile Include="..\libsrc\geom2d\geometry2d.cpp" />
+    <ClCompile Include="..\libsrc\geom2d\python_geom2d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\adtree.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geom2d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geom3d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geomfuncs.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geomtest3d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\spline.cpp" />
+    <ClCompile Include="..\libsrc\gprim\splinegeometry.cpp" />
+    <ClCompile Include="..\libsrc\gprim\transform3d.cpp" />
+    <ClCompile Include="..\libsrc\linalg\bfgs.cpp" />
+    <ClCompile Include="..\libsrc\linalg\densemat.cpp" />
+    <ClCompile Include="..\libsrc\linalg\linopt.cpp" />
+    <ClCompile Include="..\libsrc\linalg\linsearch.cpp" />
+    <ClCompile Include="..\libsrc\linalg\polynomial.cpp" />
+    <ClCompile Include="..\libsrc\meshing\adfront2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\adfront3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\basegeom.cpp" />
+    <ClCompile Include="..\libsrc\meshing\bcfunctions.cpp" />
+    <ClCompile Include="..\libsrc\meshing\bisect.cpp" />
+    <ClCompile Include="..\libsrc\meshing\boundarylayer.cpp" />
+    <ClCompile Include="..\libsrc\meshing\clusters.cpp" />
+    <ClCompile Include="..\libsrc\meshing\curvedelems.cpp" />
+    <ClCompile Include="..\libsrc\meshing\debugging.cpp" />
+    <ClCompile Include="..\libsrc\meshing\delaunay.cpp" />
+    <ClCompile Include="..\libsrc\meshing\delaunay2d.cpp" />
+    <ClCompile Include="..\libsrc\meshing\geomsearch.cpp" />
+    <ClCompile Include="..\libsrc\meshing\global.cpp" />
+    <ClCompile Include="..\libsrc\meshing\hprefinement.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve2gen.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\localh.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshclass.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshfunc.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshfunc2d.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshing2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshing3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshtool.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshtype.cpp" />
+    <ClCompile Include="..\libsrc\meshing\msghandler.cpp" />
+    <ClCompile Include="..\libsrc\meshing\netrule2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\netrule3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parallelmesh.cpp" />
+    <ClCompile Include="..\libsrc\meshing\paralleltop.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parser2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parser3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\python_mesh.cpp" />
+    <ClCompile Include="..\libsrc\meshing\refine.cpp" />
+    <ClCompile Include="..\libsrc\meshing\ruler2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\ruler3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\secondorder.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing2.5.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\specials.cpp" />
+    <ClCompile Include="..\libsrc\meshing\surfacegeom.cpp" />
+    <ClCompile Include="..\libsrc\meshing\topology.cpp" />
+    <ClCompile Include="..\libsrc\meshing\validate.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\meshstlsurface.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\python_stl.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stlgeom.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stlgeomchart.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stlgeommesh.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stlline.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stltool.cpp" />
+    <ClCompile Include="..\libsrc\stlgeom\stltopology.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

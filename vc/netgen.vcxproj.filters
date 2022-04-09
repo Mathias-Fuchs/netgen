@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{5b35bd5e-d80a-40a1-b301-208b4dc26c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\general">
+      <UniqueIdentifier>{5893c388-efd6-4678-8c0d-b009c9eed568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\csg">
+      <UniqueIdentifier>{650b1271-3967-4688-895e-137ff13d50cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geom2d">
+      <UniqueIdentifier>{62c228bf-3b21-4347-8ff6-feed43756f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gprim">
+      <UniqueIdentifier>{0d7ce666-66d5-4182-8c9a-b025ff8dba80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\linalg">
+      <UniqueIdentifier>{86786bcf-1828-4255-bf39-f359f85f69e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\meshing">
+      <UniqueIdentifier>{e7b26357-15a3-4c70-8c33-42eada47a5f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stlgeom">
+      <UniqueIdentifier>{17b9dfe6-50c1-4411-879e-2c5cb59f947d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libsrc\core\archive.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\bitarray.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\exception.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\flags.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\localheap.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\logging.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\paje_trace.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\profiler.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\table.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\taskmanager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\utils.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\core\version.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\dynamicmem.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\gzstream.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\hashtabl.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\mpi_interface.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\mystring.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\ngarray.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\ngbitarray.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\optmem.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\parthreads.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\seti.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\sort.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\spbita2d.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\general\table.cpp">
+      <Filter>Source Files\general</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\algprim.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\brick.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\bspline2d.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\csgeom.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\csgparser.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\curve2d.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\edgeflw.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\explicitcurve2d.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\extrusion.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\gencyl.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\genmesh.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\identify.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\manifold.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\meshsurf.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\polyhedra.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\python_csg.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\revolution.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\singularref.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\solid.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\specpoin.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\spline3d.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\splinesurface.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\surface.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\triapprox.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\csg\zrefine.cpp">
+      <Filter>Source Files\csg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\meshstlsurface.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\python_stl.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stlgeom.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stlgeomchart.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stlgeommesh.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stlline.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stltool.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\stlgeom\stltopology.cpp">
+      <Filter>Source Files\stlgeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\adfront2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\adfront3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\basegeom.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\bcfunctions.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\bisect.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\boundarylayer.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\clusters.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\curvedelems.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\debugging.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\delaunay.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\delaunay2d.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\geomsearch.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\global.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\hprefinement.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\improve2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\improve2gen.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\improve3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\localh.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshclass.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshfunc.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshfunc2d.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshing2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshing3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshtool.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\meshtype.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\msghandler.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\netrule2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\netrule3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\parallelmesh.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\paralleltop.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\parser2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\parser3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\python_mesh.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\refine.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\ruler2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\ruler3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\secondorder.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\smoothing2.5.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\smoothing2.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\smoothing3.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\specials.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\surfacegeom.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\topology.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\meshing\validate.cpp">
+      <Filter>Source Files\meshing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\linalg\bfgs.cpp">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\linalg\densemat.cpp">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\linalg\linopt.cpp">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\linalg\linsearch.cpp">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\linalg\polynomial.cpp">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\adtree.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\geom2d.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\geom3d.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\geomfuncs.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\geomtest3d.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\spline.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\splinegeometry.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\gprim\transform3d.cpp">
+      <Filter>Source Files\gprim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\geom2d\csg2d.cpp">
+      <Filter>Source Files\geom2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\geom2d\genmesh2d.cpp">
+      <Filter>Source Files\geom2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\geom2d\geometry2d.cpp">
+      <Filter>Source Files\geom2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsrc\geom2d\python_geom2d.cpp">
+      <Filter>Source Files\geom2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
