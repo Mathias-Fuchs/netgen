@@ -33,6 +33,9 @@
     <Filter Include="Source Files\stlgeom">
       <UniqueIdentifier>{17b9dfe6-50c1-4411-879e-2c5cb59f947d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\rules">
+      <UniqueIdentifier>{9a67bfb2-1a3c-4e39-bf68-840014c1d0f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libsrc\core\archive.cpp">
@@ -382,6 +385,12 @@
     </ClCompile>
     <ClCompile Include="..\libsrc\test.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rules\hexrules.cpp">
+      <Filter>Source Files\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rules\prisms.cpp">
+      <Filter>Source Files\rules</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

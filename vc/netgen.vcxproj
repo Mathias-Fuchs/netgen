@@ -172,6 +172,8 @@
     <ClCompile Include="..\libsrc\stlgeom\stltool.cpp" />
     <ClCompile Include="..\libsrc\stlgeom\stltopology.cpp" />
     <ClCompile Include="..\libsrc\test.cpp" />
+    <ClCompile Include="..\rules\hexrules.cpp" />
+    <ClCompile Include="..\rules\prisms.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
