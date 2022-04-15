@@ -7,3 +7,4 @@
 *.swp
 /vc/x64/Debug
 /rules/a.exe
+*.vcxproj~
