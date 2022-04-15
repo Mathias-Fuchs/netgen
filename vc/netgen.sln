@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgen", "netgen.vcxproj", "{8120DF59-DA7E-4455-9104-4F312EE22829}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenGeneral", "netgenGeneral.vcxproj", "{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{8120DF59-DA7E-4455-9104-4F312EE22829}.Debug|x64.Build.0 = Debug|x64
 		{8120DF59-DA7E-4455-9104-4F312EE22829}.Release|x64.ActiveCfg = Release|x64
 		{8120DF59-DA7E-4455-9104-4F312EE22829}.Release|x64.Build.0 = Release|x64
+		{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}.Debug|x64.ActiveCfg = Debug|x64
+		{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}.Debug|x64.Build.0 = Debug|x64
+		{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}.Release|x64.ActiveCfg = Release|x64
+		{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
