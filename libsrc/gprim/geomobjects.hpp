@@ -8,6 +8,7 @@
 /* *************************************************************************/
 #include <core/archive.hpp>
 #include <core/array.hpp>
+#include <general/template.hpp>
 
 using Archive=ngcore::Archive;
 
