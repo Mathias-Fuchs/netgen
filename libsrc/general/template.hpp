@@ -7,6 +7,10 @@
 /* Date:   01. Jun. 95                                                    */
 /**************************************************************************/
 
+#include <string>
+using string = std::string;
+
+
 namespace netgen 
 {
 
