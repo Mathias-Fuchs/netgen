@@ -14,11 +14,19 @@
 
 */
 
+using namespace netgen;
+
+#include <../gprim/geomobjects.hpp>
+
+using Point = netgen::Point;
+
+
+
   ///
   class FrontPoint2
   {
     /// coordinates
-    Point<3> p;            
+    netgen::Point p;            
     /// global node index
     PointIndex globalindex;   
     /// number of front lines connected to point 
