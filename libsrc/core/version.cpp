@@ -1,8 +1,13 @@
 #include <map>
 
-#include <netgen_version.hpp>
 #include "exception.hpp"
 #include "version.hpp"
+
+#ifndef NETGEN_VERSION
+#define NETGEN_VERSION "mffork"
+#endif
+
+
 
 namespace ngcore
 {

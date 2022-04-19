@@ -1,6 +1,9 @@
 #include <mystdlib.h>
 #include "meshing.hpp"
-#include <netgen_version.hpp>
+
+#ifndef NETGEN_VERSION
+#define NETGEN_VERSION "mffork"
+#endif
 
 
 namespace netgen
