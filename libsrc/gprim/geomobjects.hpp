@@ -10,7 +10,6 @@
 #include <core/array.hpp>
 
 using Archive=ngcore::Archive;
-using Range=ngcore::Range;
 
 namespace netgen
 {
@@ -127,7 +126,7 @@ namespace netgen
     bool operator== (const Vec<D,T> &a) const
     {
       bool res = true;
-      for (auto i : Range(D))
+      for (auto i : ngcore::Range(D))
         res &= (x[i]==a.x[i]);
       return res;
     }
@@ -178,7 +177,7 @@ namespace netgen
   inline Vec<D> operator-(const Point<D>& p1, const Point<D>& p2)
   {
     Vec<D> result;
-    for(auto i : Range(D))
+    for(auto i : ngcore::Range(D))
       result[i] = p1[i] - p2[i];
     return result;
   }
@@ -187,7 +186,7 @@ namespace netgen
   inline Vec<D> operator*(const Vec<D>& v, double d)
   {
     Vec<D> result;
-    for(auto i : Range(D))
+    for(auto i : ngcore::Range(D))
       result[i] = d*v[i];
     return result;
   }
