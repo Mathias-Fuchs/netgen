@@ -7,6 +7,14 @@
 /* Date:   01. Jun. 95                                                    */
 /**************************************************************************/
 
+#include <string>
+#include <iostream>
+
+
+using string=std::string;
+using ostream=std::ostream;
+
+
 namespace netgen 
 {
 
