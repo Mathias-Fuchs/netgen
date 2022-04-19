@@ -6,7 +6,11 @@
 /* Author: Joachim Schoeberl                                               */
 /* Date:   20. Jul. 02                                                     */
 /* *************************************************************************/
+#include <core/archive.hpp>
+#include <core/array.hpp>
 
+using Archive=ngcore::Archive;
+using Range=ngcore::Range;
 
 namespace netgen
 {

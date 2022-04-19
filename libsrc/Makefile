@@ -10,6 +10,9 @@ gprim:
 linalg:
 	g++ --shared linalg/*.cpp --std=c++17 -fPIC -Iinclude -I. -Wl,-z,defs -ldl -lpthread
 
+meshing:
+	g++ --shared meshing/*.cpp --std=c++17 -fPIC -Iinclude -I. -Wl,-z,defs -ldl -lpthread -Wfatal-errors -Wall
+
 
 
 
@@ -21,4 +24,4 @@ linalg:
 # 	# strategie: die Dateien weglassen, in denen Symbole vorkommen, die noch undefiniert sind
 
 
-.PHONY:	core general gprim linalg
+.PHONY:	core general gprim linalg meshing
