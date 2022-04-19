@@ -13,3 +13,6 @@
 *.obj
 *.log
 *.recipe
+/vc/netgenCore/Debug
+/vc/netgenGprim/Debug
+/vc/netgenLinalg/Debug
