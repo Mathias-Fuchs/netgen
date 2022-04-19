@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenLinalg", "netgenLinal
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenGprim", "netgenGprim.vcxproj", "{011DC762-A5AB-445B-8F24-4C50491A59FE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenCsg", "netgenCsg.vcxproj", "{56E14F86-6F81-4C4F-8D76-F475D354B1BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -39,6 +41,10 @@ Global
 		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Debug|x64.Build.0 = Debug|x64
 		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Release|x64.ActiveCfg = Release|x64
 		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Release|x64.Build.0 = Release|x64
+		{56E14F86-6F81-4C4F-8D76-F475D354B1BC}.Debug|x64.ActiveCfg = Debug|x64
+		{56E14F86-6F81-4C4F-8D76-F475D354B1BC}.Debug|x64.Build.0 = Debug|x64
+		{56E14F86-6F81-4C4F-8D76-F475D354B1BC}.Release|x64.ActiveCfg = Release|x64
+		{56E14F86-6F81-4C4F-8D76-F475D354B1BC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
