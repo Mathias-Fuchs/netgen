@@ -8,8 +8,8 @@
 /* Date:   27. Sep. 02, Feb 2006                                          */
 /**************************************************************************/
 
-
-
+using namespace netgen;
+using namespace ngcore;
 
 class Refinement;
 

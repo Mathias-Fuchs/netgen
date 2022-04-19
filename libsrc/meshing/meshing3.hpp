@@ -1,7 +1,8 @@
 #ifndef FILE_MESHING3
 #define FILE_MESHING3
 
-
+#include "adfront3.hpp"
+#include "../core/array.hpp"
 
 
 enum MESHING3_RESULT

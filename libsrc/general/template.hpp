@@ -11,8 +11,8 @@
 #include <iostream>
 
 
-using string=std::string;
 using ostream=std::ostream;
+using string = std::string;
 
 
 namespace netgen 
