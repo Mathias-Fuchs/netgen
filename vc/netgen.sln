@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenGeneral", "netgenGene
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenCore", "netgenCore.vcxproj", "{8171A076-3EC1-42C6-B085-3FD4D9284833}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenLinalg", "netgenLinalg.vcxproj", "{B585F5FA-A439-4566-A67C-3ABB2737AA7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netgenGprim", "netgenGprim.vcxproj", "{011DC762-A5AB-445B-8F24-4C50491A59FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +31,14 @@ Global
 		{8171A076-3EC1-42C6-B085-3FD4D9284833}.Debug|x64.Build.0 = Debug|x64
 		{8171A076-3EC1-42C6-B085-3FD4D9284833}.Release|x64.ActiveCfg = Release|x64
 		{8171A076-3EC1-42C6-B085-3FD4D9284833}.Release|x64.Build.0 = Release|x64
+		{B585F5FA-A439-4566-A67C-3ABB2737AA7D}.Debug|x64.ActiveCfg = Debug|x64
+		{B585F5FA-A439-4566-A67C-3ABB2737AA7D}.Debug|x64.Build.0 = Debug|x64
+		{B585F5FA-A439-4566-A67C-3ABB2737AA7D}.Release|x64.ActiveCfg = Release|x64
+		{B585F5FA-A439-4566-A67C-3ABB2737AA7D}.Release|x64.Build.0 = Release|x64
+		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Debug|x64.ActiveCfg = Debug|x64
+		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Debug|x64.Build.0 = Debug|x64
+		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Release|x64.ActiveCfg = Release|x64
+		{011DC762-A5AB-445B-8F24-4C50491A59FE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,3 +8,8 @@
 /vc/x64/Debug
 /rules/a.exe
 *.vcxproj~
+/vc/netgenGeneral/Debug
+/vc/netgenGeneral.tlog
+*.obj
+*.log
+*.recipe

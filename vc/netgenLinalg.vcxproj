@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}</ProjectGuid>
+    <ProjectGuid>{B585F5FA-A439-4566-A67C-3ABB2737AA7D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -64,18 +64,11 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\libsrc\general\dynamicmem.cpp" />
-    <ClCompile Include="..\libsrc\general\hashtabl.cpp" />
-    <ClCompile Include="..\libsrc\general\mpi_interface.cpp" />
-    <ClCompile Include="..\libsrc\general\mystring.cpp" />
-    <ClCompile Include="..\libsrc\general\ngarray.cpp" />
-    <ClCompile Include="..\libsrc\general\ngbitarray.cpp" />
-    <ClCompile Include="..\libsrc\general\optmem.cpp" />
-    <ClCompile Include="..\libsrc\general\parthreads.cpp" />
-    <ClCompile Include="..\libsrc\general\seti.cpp" />
-    <ClCompile Include="..\libsrc\general\sort.cpp" />
-    <ClCompile Include="..\libsrc\general\spbita2d.cpp" />
-    <ClCompile Include="..\libsrc\general\table.cpp" />
+    <ClCompile Include="..\libsrc\linalg\bfgs.cpp" />
+    <ClCompile Include="..\libsrc\linalg\densemat.cpp" />
+    <ClCompile Include="..\libsrc\linalg\linopt.cpp" />
+    <ClCompile Include="..\libsrc\linalg\linsearch.cpp" />
+    <ClCompile Include="..\libsrc\linalg\polynomial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

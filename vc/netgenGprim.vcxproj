@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{1020BAAC-FFD8-46D4-B47B-A57DD73D10E5}</ProjectGuid>
+    <ProjectGuid>{011DC762-A5AB-445B-8F24-4C50491A59FE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -64,18 +64,19 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\libsrc\general\dynamicmem.cpp" />
-    <ClCompile Include="..\libsrc\general\hashtabl.cpp" />
-    <ClCompile Include="..\libsrc\general\mpi_interface.cpp" />
-    <ClCompile Include="..\libsrc\general\mystring.cpp" />
-    <ClCompile Include="..\libsrc\general\ngarray.cpp" />
-    <ClCompile Include="..\libsrc\general\ngbitarray.cpp" />
-    <ClCompile Include="..\libsrc\general\optmem.cpp" />
-    <ClCompile Include="..\libsrc\general\parthreads.cpp" />
-    <ClCompile Include="..\libsrc\general\seti.cpp" />
-    <ClCompile Include="..\libsrc\general\sort.cpp" />
-    <ClCompile Include="..\libsrc\general\spbita2d.cpp" />
-    <ClCompile Include="..\libsrc\general\table.cpp" />
+    <ClCompile Include="..\libsrc\gprim\adtree.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geom2d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geom3d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geomfuncs.cpp" />
+    <ClCompile Include="..\libsrc\gprim\geomtest3d.cpp" />
+    <ClCompile Include="..\libsrc\gprim\spline.cpp" />
+    <ClCompile Include="..\libsrc\gprim\splinegeometry.cpp" />
+    <ClCompile Include="..\libsrc\gprim\transform3d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="netgenGeneral.vcxproj">
+      <Project>{1020baac-ffd8-46d4-b47b-a57dd73d10e5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

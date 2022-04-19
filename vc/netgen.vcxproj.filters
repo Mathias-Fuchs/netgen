@@ -380,9 +380,6 @@
     <ClCompile Include="..\libsrc\geom2d\geometry2d.cpp">
       <Filter>Source Files\geom2d</Filter>
     </ClCompile>
-    <ClCompile Include="..\libsrc\geom2d\python_geom2d.cpp">
-      <Filter>Source Files\geom2d</Filter>
-    </ClCompile>
     <ClCompile Include="..\libsrc\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
