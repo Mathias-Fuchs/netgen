@@ -2,9 +2,12 @@
 //
 
 #include <iostream>
+#include "../../libsrc/meshing/meshing3.hpp"
+
 
 int main()
 {
+    Meshing3 m;
     std::cout << "Hello World!\n";
 }
 

@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,6 +144,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mftest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\netgenCore.vcxproj">
+      <Project>{8171a076-3ec1-42c6-b085-3fd4d9284833}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenCsg.vcxproj">
+      <Project>{56e14f86-6f81-4c4f-8d76-f475d354b1bc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenGeneral.vcxproj">
+      <Project>{1020baac-ffd8-46d4-b47b-a57dd73d10e5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenGeom2d.vcxproj">
+      <Project>{03ff2695-b47b-4a71-abf1-6ef3d914c085}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenGprim.vcxproj">
+      <Project>{011dc762-a5ab-445b-8f24-4c50491a59fe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenLinalg.vcxproj">
+      <Project>{b585f5fa-a439-4566-a67c-3abb2737aa7d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenMeshing.vcxproj">
+      <Project>{2006f20d-40ca-4467-a425-6758a9dbe7d3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\netgenStlgeom.vcxproj">
+      <Project>{52a1a79d-91aa-4954-bb97-9f6fd2d33139}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
