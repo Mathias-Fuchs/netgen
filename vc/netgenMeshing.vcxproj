@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{2006F20D-40CA-4467-A425-6758A9DBE7D3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(HOME)\source\repos\netgen\libsrc;$(HOME)\source\repos\netgen\libsrc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;__AVX__;NOMINMAX;NGINTERFACE_EXPORTS;NGLIB_EXPORTS;nglib_EXPORT;</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(HOME)\source\repos\netgen\libsrc;$(HOME)\source\repos\netgen\libsrc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NGCORE_EXPORTS;_AFXDLL;__AVX__;NOMINMAX;NGINTERFACE_EXPORTS;NGLIB_EXPORTS;nglib_EXPORT;</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libsrc\meshing\adfront2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\adfront3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\basegeom.cpp" />
+    <ClCompile Include="..\libsrc\meshing\bcfunctions.cpp" />
+    <ClCompile Include="..\libsrc\meshing\bisect.cpp" />
+    <ClCompile Include="..\libsrc\meshing\boundarylayer.cpp" />
+    <ClCompile Include="..\libsrc\meshing\clusters.cpp" />
+    <ClCompile Include="..\libsrc\meshing\curvedelems.cpp" />
+    <ClCompile Include="..\libsrc\meshing\debugging.cpp" />
+    <ClCompile Include="..\libsrc\meshing\delaunay.cpp" />
+    <ClCompile Include="..\libsrc\meshing\delaunay2d.cpp" />
+    <ClCompile Include="..\libsrc\meshing\geomsearch.cpp" />
+    <ClCompile Include="..\libsrc\meshing\global.cpp" />
+    <ClCompile Include="..\libsrc\meshing\hprefinement.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve2gen.cpp" />
+    <ClCompile Include="..\libsrc\meshing\improve3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\localh.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshclass.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshfunc.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshfunc2d.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshing2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshing3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshtool.cpp" />
+    <ClCompile Include="..\libsrc\meshing\meshtype.cpp" />
+    <ClCompile Include="..\libsrc\meshing\msghandler.cpp" />
+    <ClCompile Include="..\libsrc\meshing\netrule2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\netrule3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parallelmesh.cpp" />
+    <ClCompile Include="..\libsrc\meshing\paralleltop.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parser2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\parser3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\refine.cpp" />
+    <ClCompile Include="..\libsrc\meshing\ruler2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\ruler3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\secondorder.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing2.5.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing2.cpp" />
+    <ClCompile Include="..\libsrc\meshing\smoothing3.cpp" />
+    <ClCompile Include="..\libsrc\meshing\specials.cpp" />
+    <ClCompile Include="..\libsrc\meshing\surfacegeom.cpp" />
+    <ClCompile Include="..\libsrc\meshing\topology.cpp" />
+    <ClCompile Include="..\libsrc\meshing\validate.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
