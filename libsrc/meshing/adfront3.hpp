@@ -20,7 +20,7 @@ using Point = netgen::Point;
 class FrontPoint3
 {
   /// coordinates
-  Point<3, double> p;           
+  Point<3> p;           
   /// global node index
   PointIndex globalindex;   
   /// number of faces connected to point 

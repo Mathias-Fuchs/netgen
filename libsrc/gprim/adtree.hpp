@@ -388,9 +388,9 @@ class T_ADTreeNode
 {
 public:
   T_ADTreeNode *left, *right, *father;
-  float sep;
+  double sep;
   // float data[DIM];
-  Point<DIM,float> data;
+  Point<DIM> data;
   T pi;
   int nchilds;
 
@@ -1101,7 +1101,7 @@ public:
 //     auto & Tree() { return *tree; };
 //   };
 
-  template<int dim, typename T=INDEX, typename TSCAL=double>
+  template<int dim, typename T=INDEX>
   class DelaunayTree
   {
   public:
@@ -1112,7 +1112,7 @@ public:
 
     struct Leaf
     {
-      Point<2*dim, TSCAL> p[N];
+      Point<2*dim> p[N];
       T index[N];
       int n_elements;
       int nr;

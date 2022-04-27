@@ -18,7 +18,6 @@ using namespace netgen;
 
 #include <../gprim/geomobjects.hpp>
 
-using Point = netgen::Point;
 
 
 
@@ -26,7 +25,7 @@ using Point = netgen::Point;
   class FrontPoint2
   {
     /// coordinates
-    netgen::Point p;            
+    netgen::Point<3> p;            
     /// global node index
     PointIndex globalindex;   
     /// number of front lines connected to point 
@@ -51,8 +50,7 @@ using Point = netgen::Point;
     }
 
     ///
-    FrontPoint2 (const Point<3> & ap, PointIndex agi,
-		 MultiPointGeomInfo * amgi, bool aonsurface = true);
+    FrontPoint2 (const Point<3> & ap, PointIndex agi, MultiPointGeomInfo * amgi, bool aonsurface = true);
     ///
     ~FrontPoint2 () { ; }
 

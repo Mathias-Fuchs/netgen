@@ -161,14 +161,11 @@ public:
 private:
 
   template <typename T>
-  void CalcSegmentTransformation (const T & xi, SegmentIndex segnr,
-				  Point<3,T> * x = NULL, Vec<3,T> * dxdxi = NULL, bool * curved = NULL);
+  void CalcSegmentTransformation (const T & xi, SegmentIndex segnr,  Point<3> * x = NULL, Vec<3> * dxdxi = NULL, bool * curved = NULL);
 
-  void CalcSurfaceTransformation (Point<2> xi, SurfaceElementIndex elnr,
-				  Point<3> * x = NULL, Mat<3,2> * dxdxi = NULL, bool * curved = NULL);
+  void CalcSurfaceTransformation (Point<2> xi, SurfaceElementIndex elnr,  Point<3> * x = NULL, Mat<3,2> * dxdxi = NULL, bool * curved = NULL);
 
-  void CalcElementTransformation (Point<3> xi, ElementIndex elnr,
-				  Point<3> * x = NULL, Mat<3,3> * dxdxi = NULL, // bool * curved = NULL,
+  void CalcElementTransformation (Point<3> xi, ElementIndex elnr,  Point<3> * x = NULL, Mat<3,3> * dxdxi = NULL, // bool * curved = NULL,
                                   void * buffer = NULL, bool valid = 0);
 
 

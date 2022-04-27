@@ -11,16 +11,17 @@
 #include <general/template.hpp>
 
 using Archive=ngcore::Archive;
+using T = double;
 
 namespace netgen
 {
 
 
-  template <int D, typename T = double> class Vec;
-  template <int D, typename T = double> class Point;
+  template <int D> class Vec;
+  template <int D> class Point;
 
 
-  template <int D, typename T>
+  template <int D>
   class Point
   {
 
@@ -43,7 +44,6 @@ namespace netgen
     Point (T ax, T ay, T az, T au)
     { x[0] = ax; x[1] = ay; x[2] = az; x[3] = au;}
 
-    template <typename T2>
     Point (const Point<D,T2> & p2)
     { for (int i = 0; i < D; i++) x[i] = p2(i); }
 
@@ -51,8 +51,7 @@ namespace netgen
     { for (int i = 0; i < D; i++) x[i] = v(i); }
 
 
-    template <typename T2>
-    Point & operator= (const Point<D,T2> & p2)
+    Point & operator= (const Point<D> & p2)
     {
       for (int i = 0; i < D; i++) x[i] = p2(i);
       return *this;
@@ -79,7 +78,7 @@ namespace netgen
     }
   };
 
-  template <int D, typename T>
+  template <int D>
   class Vec
   {
 
@@ -105,14 +104,13 @@ namespace netgen
     Vec (const Vec<D> & p2)
     { for (int i = 0; i < D; i++) x[i] = p2.x[i]; }
 
-    explicit Vec (const Point<D,T> & p)
+    explicit Vec (const Point<D> & p)
     { for (int i = 0; i < D; i++) x[i] = p(i); }
 
-    explicit Vec(const Point<D,T>& p1, const Point<D,T>& p2)
+    explicit Vec(const Point<D>& p1, const Point<D>& p2)
     { for(int i=0; i<D; i++) x[i] = p2(i)-p1(i); }
 
-    template <typename T2>
-    Vec & operator= (const Vec<D,T2> & p2)
+    Vec & operator= (const Vec<D> & p2)
     {
       for (int i = 0; i < D; i++) x[i] = p2(i);
       return *this;
@@ -124,7 +122,7 @@ namespace netgen
       return *this;
     }
 
-    bool operator== (const Vec<D,T> &a) const
+    bool operator== (const Vec<D> &a) const
     {
       bool res = true;
       for (auto i : ngcore::Range(D))
@@ -251,25 +249,25 @@ namespace netgen
     T & operator() (int i) { return x[i]; }
     const T & operator() (int i) const { return x[i]; }
 
-    Vec<H,T> Col (int i) const
+    Vec<H> Col (int i) const
     {
-      Vec<H,T> hv; 
+      Vec<H> hv; 
       for (int j = 0; j < H; j++)
 	hv(j) = x[j*W+i];
       return hv; 
     }
 
-    Vec<W,T> Row (int i) const
+    Vec<W> Row (int i) const
     {
-      Vec<W,T> hv; 
+      Vec<W> hv; 
       for (int j = 0; j < W; j++)
 	hv(j) = x[i*W+j];
       return hv; 
     }
 
-    void Solve (const Vec<H,T> & rhs, Vec<W,T> & sol) const
+    void Solve (const Vec<H> & rhs, Vec<W> & sol) const
     {
-      Mat<W,H,T> inv;
+      Mat<W,H> inv;
       CalcInverse (*this, inv);
       sol = inv * rhs;
     }
